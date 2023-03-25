@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <span><b>Ques 1.</b></span> <br>
+    What is 25+25 ?<br>
+    <input type="radio" name="question1" onclick="right()">50 <br>
+    <input type="radio" name="question1">8 <br>
+    <input type="radio" name="question1">9 <br>
+    <input type="radio" name="question1">10 <br>
+
+    <span><b>Ques 2.</b></span> <br>
+    What is 50/5 ?<br>
+    <input type="radio" name="question2">4.5 <br>
+    <input type="radio" name="question2">3 <br>
+    <input type="radio" name="question2" onclick="right()">10<br>
+    <input type="radio" name="question2">9 <br>
+
+    <span><b>Ques 3.</b></span> <br>
+    What is 6*5 ?<br>
+    <input type="radio" name="question3">25 <br>
+    <input type="radio" name="question3" onclick="right()">30 <br>
+    <input type="radio" name="question3">2.5 <br>
+    <input type="radio" name="question3">2 <br>
+
+    <span><b>Ques 4.</b></span> <br>
+    What is 40-20 ?<br>
+    <input type="radio" name="question4">5 <br>
+    <input type="radio" name="question4" onclick="right()">20 <br>
+    <input type="radio" name="question4">30 <br>
+    <input type="radio" name="question4">15 <br>
+
+    <span><b>Ques 5.</b></span> <br>
+    What is 20+40-5*2 ?<br>
+    <input type="radio" name="question5">10 <br>
+    <input type="radio" name="question5" onclick="right()">50 <br>
+    <input type="radio" name="question5">30 <br>
+    <input type="radio" name="question5">15 <br>
+
+    <input type="submit" name="submit" value="SubmitQuiz" onClick="points()">
+    <button><a href="#" style="text-decoration: none;">Reload</a></button>
+
+    <script type="text/javascript">
+        let score=0;
+        function right(){
+            score++;
+        }
+        function points() {   
+            alert("Your have Secured :" + score);
+        }
+    </script>
+
+</body>
+
+</html>
